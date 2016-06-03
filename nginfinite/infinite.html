@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ftitApp">
+<head>
+	<meta charset="UTF-8">
+	<title>infinite</title>
+</head>
+<body>
+ <div ng-controller='PostListController'>
+      <div infinite-scroll='myPagingFunction()'  infinite-scroll-distance='3'>
+         <div ng-repeat='item in items'>
+              <p>
+                 
+                  <label>{{item.id}}</label>
+                  <label>{{item.id}}</label>
+                  <label>{{item.id}}</label>
+                  <label>{{item.id}}</label>
+                 <label>{{item.id}}</label>
+                 <label>{{item.author_id}}</label>
+            </p>
+         </div>
+    </div>
+ </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/ng-infinite-scroll.js"></script>
+<script src="controller/PostListController.js"></script>
+</html>

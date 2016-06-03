@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+</head>
+<body>
+	<div  ng-controller='DemoController'>
+  <div infinite-scroll='loadMore()' infinite-scroll-distance='1' infinite-scroll-disabled="true">
+    <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
+   <!--  <div ng-repeat="items in list">
+    	<p>{{items.id}}</p>
+    </div> -->
+  </div>
+</div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="angular.js"></script>
+<script src="ng-infinite-scroll.js"></script>
+<script src="../controller/DemoController.js"></script>
+</html>
