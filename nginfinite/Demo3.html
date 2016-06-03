@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div ng-app='myApp' ng-controller='DemoController'>
+  <div infinite-scroll='nextPage()' infinite-scroll-disabled='busy' infinite-scroll-distance='1'>
+  	<div ng-repeat='item in items'>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  		<p style="font-size:40px" ng-bind="item.id"></p>
+  	</div>
+  	<div ng-show='busy&&load'>Loading data...</div> 
+  </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/ng-infinite-scroll.js"></script>
+<script src="controller/Demo3Controller.js"></script>
+</html>
